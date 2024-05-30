@@ -1,0 +1,102 @@
+<!--Marcos Tapia Martel -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="icon" href="../imagenes/favicon-96x96.png">
+    <link rel="stylesheet" href="../css/contacto.css">
+</head>
+
+<body>
+    <header>
+        <h1>La web de las artes</h1>
+        <h2>SECCIÓN: Contáctanos</h2>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="musica.html">Música</a></li>
+            <li><a href="cine.html">Cine</a></li>
+            <li><a href="generosLiterarios.html">Géneros Literarios</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+            <li><a href="#">Contáctanos</a></li>
+        </ul>
+        <hr>
+    </header>
+    <main>
+        <form name="formulario" method="post" action="/send.php" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <p>
+                    <label for="nombre"> Nombre:</label>
+                    <input type="text" name="nombre" autocomplete="off" placeholder="Introduzca su nombre..." required><abbr title="Campo obligatorio">*</abbr>
+                </p>
+                <p>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" name="apellido" autocomplete="off" placeholder="Introduzca su apellido"
+                        required> <abbr title="Campo obligatorio">*</abbr>
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input class="input" type="email" name="correo" autocomplete="off" placeholder="nombre@dominio.com">
+                </p>
+                <p>
+                    <label for="nacimiento">Fecha de Nacimiento:</label>
+                    <input class="input" type="date" name="fecha" autocomplete="off" placeholder="dd/mm/aaaa">
+                </p>
+                <p>
+                    <label for="edad">Edad:</label>
+                    <input class="input" type="number" style="width:45px;" name="edad" autocomplete="off" max="100"
+                        title="El valor debe ser inferior o igual a 100 ">
+                </p>
+                <p>
+                    <label for="Sexo">Sexo:</label>
+                    <input class="hombre" type="radio" name="sexo" value="H" checked /><span>Hombre</span>
+                    <input type="radio" name="sexo" value="M" /><span>Mujer</span>
+                </p>
+                <p>
+                    <label for="pais">País</label>
+                    <select name="pais" id="ps">
+                        <option value="" selected="selected">- Selecciona -</option>
+                        <option value="españa">España</option>
+                        <option value="francia">Francia</option>
+                        <option value="portugal">Portugal</option>
+                        <option value="italia">Italia</option>
+                    </select>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Otros Datos</legend>
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea name="mensaje" id="ms" cols="50" rows="10" spellcheck="true"
+                        placeholder="Introduzca tu mensaje..."></textarea>
+                </div>
+                <div>
+                    <label for="">Adjutno una foto...</label>
+                    <input type="file" name="adjunto" accept=".jpg,.png" multiple />
+                </div>
+            </fieldset>
+            <div>
+                <input type="checkbox" name="condiciones" checked /><span>He leído las condiciones...
+                </span>
+            </div>
+            </div>
+            <input class="boton" type="reset" value="Limpiar" />
+            <input class="boton" type="submit" value="Enviar" />
+        </form>
+        <h1 class="titulo">Centro de referencia</h1>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11798.713739812772!2d-16.285722437175284!3d28.456090296667327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41cceee5a8035f%3A0xab9f2a74d9e68b51!2sCIFP%20C%C3%A9sar%20Manrique!5e0!3m2!1ses!2ses!4v1707912572456!5m2!1ses!2ses"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <hr>
+    </main>
+    <footer>
+        <a href="#">Inicio</a>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+/*Marcos Tapia Martel*/
+table,th,td {
+border: 1px solid black;
+border-collapse: collapse;
+text-align: center;
+padding: 3px 6px;
+vertical-align: middle;
+}
+.li{
+    text-align: left;
+}
